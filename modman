@@ -1,0 +1,3 @@
+app/etc/modules/OpenMage_KittedProduct.xml
+app/code/community/OpenMage/KittedProduct
+app/design/adminhtml/default/default/layout/OpenMage_KittedProduct.xml

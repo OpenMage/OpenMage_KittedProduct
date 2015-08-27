@@ -1,0 +1,22 @@
+{
+    "name": "openmage/openmage_kittedproduct",
+    "description": "Magento Kitted Product Module",
+    "keywords": [
+        "magento"
+    ],
+    "authors": [
+        {
+            "name": "Lee Saferite",
+            "email": "lee@openmage.org"
+        }
+    ],
+    "license": "OSL-3.0",
+    "type": "magento-module",
+    "require": {
+        "php": ">= 5.4",
+        "magento-hackathon/magento-composer-installer": "*"
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "*"
+    }
+}

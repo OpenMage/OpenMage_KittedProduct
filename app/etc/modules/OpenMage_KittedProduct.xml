@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <OpenMage_KittedProduct>
+            <active>true</active>
+            <codePool>community</codePool>
+            <depends>
+                <Mage_Core/>
+                <Mage_Eav/>
+                <Mage_Adminhtml/>
+                <Mage_Catalog/>
+                <Mage_Index/>
+                <Mage_CatalogIndex/>
+                <Mage_CatalogInventory/>
+            </depends>
+        </OpenMage_KittedProduct>
+    </modules>
+</config>
