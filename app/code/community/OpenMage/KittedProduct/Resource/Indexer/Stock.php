@@ -1,6 +1,6 @@
 <?php
 
-class OpenMage_KittedProduct_Resource_Indexer_Stock extends Mage_CatalogInventory_Model_Resource_Indexer_Stock_Grouped
+class OpenMage_KittedProduct_Resource_Indexer_Stock extends Mage_CatalogInventory_Model_Resource_Indexer_Stock_Default
 {
     /**
      * Get the select object for get stock status by product ids
