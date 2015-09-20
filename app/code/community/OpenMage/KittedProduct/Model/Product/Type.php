@@ -216,6 +216,7 @@ class OpenMage_KittedProduct_Model_Product_Type extends Mage_Catalog_Model_Produ
         $associatedProducts = $this->getAssociatedProducts($product);
         if ($associatedProducts && $this->_isStrictProcessMode($processMode)) {
             foreach ($associatedProducts as $subProduct) {
+                $buyRequest->setQty($parentProduct->getQty() * $subProduct->getQty());
                 $result = $subProduct->getTypeInstance(true)->processConfiguration($buyRequest, $subProduct, $processMode);
                 if (!is_array($result)) {
                     return $result;
