@@ -260,4 +260,22 @@ class OpenMage_KittedProduct_Model_Product_Type extends Mage_Catalog_Model_Produ
 
         return $groups;
     }
+
+
+    /**
+     * Prepare additional options/information for order item which will be
+     * created from this product
+     *
+     * @param Mage_Catalog_Model_Product $product
+     *
+     * @return array
+     */
+    public function getOrderOptions($product = null)
+    {
+        $optionArr = parent::getOrderOptions($product);
+
+        $optionArr['shipment_type'] = Mage_Catalog_Model_Product_Type_Abstract::SHIPMENT_SEPARATELY;
+
+        return $optionArr;
+    }
 }
