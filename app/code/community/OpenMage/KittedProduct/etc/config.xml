@@ -46,6 +46,16 @@
                 </type>
             </product>
         </catalog>
+        <events>
+            <sales_quote_product_add_after>
+                <observers>
+                    <OpenMage_KittedProduct>
+                        <class>OpenMage_KittedProduct/Product_Observer</class>
+                        <method>afterAddToQuote</method>
+                    </OpenMage_KittedProduct>
+                </observers>
+            </sales_quote_product_add_after>
+        </events>
     </global>
     <adminhtml>
         <sales>
